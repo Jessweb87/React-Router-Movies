@@ -37,9 +37,9 @@ export default function App () {
       <div>
         <Switch>
           <Route exact path ='/'>
-            <MovieList movies={movieList} />
+            <MovieList movies={movieList} /> /* loads the `MovieList` component */
           </Route>
-          <Route path={'/movies/:movieId'}>
+          <Route path={'/movies/:movieId'}> /* This route loads the `Movie` component.*/
             <Movie />
           </Route>
         </Switch>
